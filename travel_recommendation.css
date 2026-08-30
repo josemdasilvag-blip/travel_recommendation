@@ -191,7 +191,31 @@ a { color: var(--brand-dark); }
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin: 1.6rem 0 2.4rem;
+  margin: 1.6rem 0 1.4rem;
+}
+
+.social {
+  display: flex;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0 0 2.2rem;
+  padding: 0;
+}
+
+.social a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.social a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #fff;
 }
 
 .hero-stats {
