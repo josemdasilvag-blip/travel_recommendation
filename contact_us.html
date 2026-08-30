@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlynx Travel | Contact Us</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">WL</span>
+      <span class="brand-name">Wanderlynx<em>Travel</em></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./contact_us.html" class="active">Contact Us</a></li>
+    </ul>
+
+    <form class="search-bar" id="searchForm" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search: beach, temple, country..." aria-label="Search destinations">
+      <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+      <button type="button" id="clearBtn" class="btn btn-ghost">Clear</button>
+    </form>
+  </nav>
+
+  <main class="page page-narrow">
+
+    <section class="intro">
+      <p class="eyebrow">Contact us</p>
+      <h1>Tell us where you want to wake up</h1>
+      <p class="lead">
+        Send us a note and a travel designer will reply within one working day.
+        Include your dates if you already have them &mdash; it saves an email.
+      </p>
+    </section>
+
+    <div class="contact-grid">
+
+      <section class="panel">
+        <h2>Send us an email</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Trip to Japan in April">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Two travellers, ten days, we like temples and slow mornings." required></textarea>
+
+          <button type="submit" class="btn btn-primary btn-lg">Send message</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </section>
+
+      <aside class="panel panel-accent">
+        <h2>Contact information</h2>
+        <dl class="facts">
+          <div><dt>Email</dt><dd><a href="mailto:hello@wanderlynx.travel">hello@wanderlynx.travel</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+34931234567">+34 931 234 567</a></dd></div>
+          <div><dt>Office</dt><dd>Carrer de Mallorca 214<br>08008 Barcelona, Spain</dd></div>
+          <div><dt>Hours</dt><dd>Monday to Friday, 09:00 &ndash; 18:00 CET</dd></div>
+          <div><dt>Emergencies</dt><dd>Travellers already on a trip: +34 600 112 233, 24/7</dd></div>
+        </dl>
+        <p>
+          Prefer your own mail app? Write straight to
+          <a href="mailto:hello@wanderlynx.travel?subject=Trip%20enquiry">hello@wanderlynx.travel</a>.
+        </p>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Wanderlynx Travel &middot; Built for the JavaScript Essentials final project.</p>
+  </footer>
+
+  <script src="./travel_recommendation.js"></script>
+</body>
+</html>

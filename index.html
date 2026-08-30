@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlynx Travel | Home</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">WL</span>
+      <span class="brand-name">Wanderlynx<em>Travel</em></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./contact_us.html">Contact Us</a></li>
+    </ul>
+
+    <form class="search-bar" id="searchForm" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search: beach, temple, country..." aria-label="Search destinations">
+      <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+      <button type="button" id="clearBtn" class="btn btn-ghost">Clear</button>
+    </form>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Handpicked destinations since 2011</p>
+      <h1>Travel that actually fits you</h1>
+      <p class="lead">
+        Wanderlynx Travel turns a single word into a trip. Type
+        <strong>beach</strong>, <strong>temple</strong> or <strong>country</strong>
+        in the search bar and we will recommend places worth the flight &mdash;
+        with photos, a short honest description and the local time so you know
+        what you are waking up to.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" id="heroBeachBtn">Show me beaches</button>
+        <a class="btn btn-outline btn-lg" href="./about_us.html">Who we are</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>120+</strong><span>destinations</span></li>
+        <li><strong>18k</strong><span>trips planned</span></li>
+        <li><strong>4.8/5</strong><span>traveller rating</span></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page">
+    <section id="resultsSection" class="results-section" hidden>
+      <div class="results-head">
+        <h2 id="resultsTitle">Recommendations</h2>
+        <p id="resultsCount" class="results-count"></p>
+      </div>
+      <div id="results" class="cards"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Wanderlynx Travel &middot; Built for the JavaScript Essentials final project.</p>
+  </footer>
+
+  <script src="./travel_recommendation.js"></script>
+</body>
+</html>

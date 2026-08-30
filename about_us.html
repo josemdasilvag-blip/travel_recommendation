@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlynx Travel | About Us</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">WL</span>
+      <span class="brand-name">Wanderlynx<em>Travel</em></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about_us.html" class="active">About Us</a></li>
+      <li><a href="./contact_us.html">Contact Us</a></li>
+    </ul>
+
+    <form class="search-bar" id="searchForm" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search: beach, temple, country..." aria-label="Search destinations">
+      <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+      <button type="button" id="clearBtn" class="btn btn-ghost">Clear</button>
+    </form>
+  </nav>
+
+  <main class="page page-narrow">
+
+    <section class="intro">
+      <p class="eyebrow">About us</p>
+      <h1>A small studio that plans trips like a friend would</h1>
+      <p class="lead">
+        Wanderlynx Travel was founded in Barcelona in 2011 by three people who were
+        tired of itineraries written by algorithms that had never left the office.
+        We are a team of eleven travel designers, and every destination we recommend
+        has been visited by at least one of us. We do not sell packages: we sell time
+        well spent.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Company information</h2>
+      <dl class="facts">
+        <div><dt>Legal name</dt><dd>Wanderlynx Travel S.L.</dd></div>
+        <div><dt>Founded</dt><dd>2011, Barcelona (Spain)</dd></div>
+        <div><dt>Head office</dt><dd>Carrer de Mallorca 214, 08008 Barcelona</dd></div>
+        <div><dt>Licence</dt><dd>Travel agency licence GC-1147-SP</dd></div>
+        <div><dt>Team</dt><dd>11 travel designers across 4 time zones</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:hello@wanderlynx.travel">hello@wanderlynx.travel</a></dd></div>
+      </dl>
+      <p>
+        Our mission is simple: fewer, better recommendations. Where a booking site
+        returns three hundred results, we return three &mdash; and we can tell you why
+        each one made the list.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Meet the team</h2>
+      <div class="team">
+        <article class="member">
+          <h3>Núria Ferrer</h3>
+          <p class="role">Co-founder &amp; Head of Destinations</p>
+          <p>Fifteen years mapping coastlines in Southeast Asia and the Pacific.</p>
+        </article>
+        <article class="member">
+          <h3>Marcus Adeyemi</h3>
+          <p class="role">Co-founder &amp; Operations</p>
+          <p>Keeps flights, transfers and refunds from turning into a bad story.</p>
+        </article>
+        <article class="member">
+          <h3>Sara Lindqvist</h3>
+          <p class="role">Cultural Heritage Lead</p>
+          <p>Writes our temple and museum guides; reads three languages badly and one well.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel panel-accent">
+      <h2>Guidance for team members</h2>
+      <p>
+        Every Wanderlynx travel designer follows the same five working rules. New
+        team members are expected to read them during their first week and to apply
+        them to every recommendation they publish.
+      </p>
+      <ol class="guidelines">
+        <li>
+          <strong>Visit before you recommend.</strong> A destination only enters the
+          catalogue after a team member has been there in the last three years.
+        </li>
+        <li>
+          <strong>Write the drawback.</strong> Every description must name one honest
+          downside &mdash; crowds, price, a long transfer. If there is none, look harder.
+        </li>
+        <li>
+          <strong>Answer within one working day.</strong> Traveller messages that arrive
+          through the Contact Us form are assigned the same morning and answered
+          within twenty-four hours.
+        </li>
+        <li>
+          <strong>Respect the destination.</strong> Recommend local operators, mention
+          dress codes and opening hours for religious sites, never send groups larger
+          than eight to fragile places.
+        </li>
+        <li>
+          <strong>Keep the data clean.</strong> Photos, descriptions and time zones live in
+          <code>travel_recommendation_api.json</code>. Update that file, open a pull
+          request, and never edit the live site by hand.
+        </li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Wanderlynx Travel &middot; Built for the JavaScript Essentials final project.</p>
+  </footer>
+
+  <!--
+    Destination photographs are reduced-size files from Wikimedia Commons,
+    used here for a non-commercial educational course project.
+  -->
+  <script src="./travel_recommendation.js"></script>
+</body>
+</html>

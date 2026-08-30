@@ -1,0 +1,104 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "cities": [
+        {
+          "name": "Sydney, Australia",
+          "imageUrl": "./images/sydney.jpg",
+          "description": "A harbour city built around an opera house and a bridge, with ocean beaches thirty minutes from the centre. Downside: hotel prices in December are brutal.",
+          "timeZone": "Australia/Sydney"
+        },
+        {
+          "name": "Melbourne, Australia",
+          "imageUrl": "./images/melbourne.jpg",
+          "description": "Laneway coffee, street art and the best food per square kilometre in the country. Downside: four seasons in one afternoon, every afternoon.",
+          "timeZone": "Australia/Melbourne"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "cities": [
+        {
+          "name": "Tokyo, Japan",
+          "imageUrl": "./images/tokyo.jpg",
+          "description": "Thirteen million people and somehow it still runs on time. Go for the neighbourhoods, not the landmarks. Downside: you will walk twenty kilometres a day.",
+          "timeZone": "Asia/Tokyo"
+        },
+        {
+          "name": "Kyoto, Japan",
+          "imageUrl": "./images/kyoto.jpg",
+          "description": "Wooden houses, moss gardens and more than a thousand temples. Downside: the famous spots are shoulder to shoulder between ten and four.",
+          "timeZone": "Asia/Tokyo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Brazil",
+      "cities": [
+        {
+          "name": "Rio de Janeiro, Brazil",
+          "imageUrl": "./images/rio.jpg",
+          "description": "Mountains falling straight into the Atlantic, and a city that treats the beach as a public square. Downside: plan your neighbourhoods carefully after dark.",
+          "timeZone": "America/Sao_Paulo"
+        },
+        {
+          "name": "Sao Paulo, Brazil",
+          "imageUrl": "./images/sao-paulo.jpg",
+          "description": "The cultural engine of South America: galleries, live music and a Japanese quarter worth a whole day. Downside: traffic can eat two hours of it.",
+          "timeZone": "America/Sao_Paulo"
+        }
+      ]
+    }
+  ],
+  "temples": [
+    {
+      "id": 1,
+      "name": "Angkor Wat, Cambodia",
+      "imageUrl": "./images/angkor-wat.jpg",
+      "description": "The largest religious monument on earth, best seen at sunrise from the northern reflecting pool. Downside: the 5 a.m. start is not optional.",
+      "timeZone": "Asia/Phnom_Penh"
+    },
+    {
+      "id": 2,
+      "name": "Kiyomizu-dera, Japan",
+      "imageUrl": "./images/kiyomizu-dera.jpg",
+      "description": "A wooden hall on stilts above the Kyoto hillside, spectacular in autumn. Downside: the approach street is a tourist funnel, so arrive before eight.",
+      "timeZone": "Asia/Tokyo"
+    },
+    {
+      "id": 3,
+      "name": "Borobudur, Indonesia",
+      "imageUrl": "./images/borobudur.jpg",
+      "description": "A ninth-century Buddhist mandala in stone, ringed by volcanoes and morning mist. Downside: access to the upper terraces is limited and must be booked.",
+      "timeZone": "Asia/Jakarta"
+    }
+  ],
+  "beaches": [
+    {
+      "id": 1,
+      "name": "Bora Bora, French Polynesia",
+      "imageUrl": "./images/bora-bora.jpg",
+      "description": "A turquoise lagoon around a volcanic peak, with water clear enough to read a map through. Downside: it is the most expensive night of the trip.",
+      "timeZone": "Pacific/Tahiti"
+    },
+    {
+      "id": 2,
+      "name": "Copacabana Beach, Brazil",
+      "imageUrl": "./images/copacabana.jpg",
+      "description": "Four kilometres of sand that works as Rio's living room, from sunrise swimmers to late football. Downside: it is a city beach, so watch your bag.",
+      "timeZone": "America/Sao_Paulo"
+    },
+    {
+      "id": 3,
+      "name": "Waikiki Beach, Hawaii",
+      "imageUrl": "./images/waikiki.jpg",
+      "description": "Gentle rolling surf under Diamond Head, and the friendliest place in the world to stand on a board for the first time. Downside: it is never empty.",
+      "timeZone": "Pacific/Honolulu"
+    }
+  ]
+}
