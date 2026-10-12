@@ -35,7 +35,6 @@ async function loadTravelData() {
     throw new Error("Could not load " + API_URL + " (status " + response.status + ")");
   }
   travelData = await response.json();
-  console.log("Travel data loaded:", travelData);
   return travelData;
 }
 
@@ -152,7 +151,6 @@ function renderResults(result) {
         '<h3>' + item.name + '</h3>' +
         (time ? '<p class="card-time">Local time &middot; ' + time + '</p>' : '') +
         '<p>' + item.description + '</p>' +
-        '<button class="btn btn-primary" type="button">Visit</button>' +
       '</div>';
 
     container.appendChild(card);
@@ -203,45 +201,16 @@ function handleClear() {
   if (hero) hero.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function handleContactSubmit(event) {
-  event.preventDefault();
-
-  const form = event.target;
-  const status = document.getElementById("formStatus");
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
-
-  if (!name || !email || !message) {
-    status.textContent = "Please fill in your name, your email and a message.";
-    status.className = "form-status error";
-    return;
-  }
-  if (!email.includes("@") || !email.includes(".")) {
-    status.textContent = "That email address does not look valid.";
-    status.className = "form-status error";
-    return;
-  }
-
-  status.textContent =
-    "Thank you, " + name + ". We have your message and will reply to " + email +
-    " within one working day.";
-  status.className = "form-status success";
-  form.reset();
-}
-
 /* ---------- Wiring ---------- */
 
 document.addEventListener("DOMContentLoaded", function () {
   const searchBtn = document.getElementById("searchBtn");
   const clearBtn = document.getElementById("clearBtn");
   const input = document.getElementById("searchInput");
-  const contactForm = document.getElementById("contactForm");
   const heroBeachBtn = document.getElementById("heroBeachBtn");
 
   if (searchBtn) searchBtn.addEventListener("click", handleSearch);
   if (clearBtn) clearBtn.addEventListener("click", handleClear);
-  if (contactForm) contactForm.addEventListener("submit", handleContactSubmit);
 
   if (input) {
     input.addEventListener("keydown", function (event) {
